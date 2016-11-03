@@ -17,15 +17,14 @@
 			<div class="input-group">
 				<input type="text" ng-model="user.name" class="form-control" placeholder="Escribe aqui el nombre de usuario GitHub" name="enter" required>
 				<span class="input-group-btn">
-				<button ng-click="vm.fetchData(user)" class="btn btn-primary" onclick="ocultar()">Busca!</button>
+				<button ng-click="vm.fetchData(user)" class="btn btn-primary" onclick="proceso()">Busca!</button>
 				</span>
 			</div>	
 		</div></br>
-		<div>
+		<div >
 			<label for="enter" id="ocultar" style='display:block;'> Busqueda de perfiles en GitHub </label>
-
 				<h4 ng-if="vm.loading === true" class="loading">loading...</h4>
-			<table class="table">
+			<table class="table" id="mostrar" style='display:none;'>
 			    <thead>
 			      <tr>
 			        <th>Perfil de Usuario</th>

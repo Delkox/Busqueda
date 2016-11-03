@@ -15,10 +15,8 @@ app.controller('MainCtrl', function($http){
 	}
 })
 
-/*Ocultar*/
-function ocultar(){
-document.getElementById('ocultar').style.display = 'none';}
-
-/*Mostrar*/
-function mostrar(){
+/*Ocultar y mostrar*/
+function proceso(){
+document.getElementById('ocultar').style.display = 'none';
 document.getElementById('mostrar').style.display = 'block';}
+
