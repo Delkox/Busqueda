@@ -8,7 +8,6 @@ label, input {
 }
 
 label {
-	display: ='none';
     width: 100%;
     text-align: center;
 }

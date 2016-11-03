@@ -17,7 +17,7 @@ app.controller('MainCtrl', function($http){
 
 /*Ocultar*/
 function ocultar(){
-document.getElementById('oculto').style.display = 'none';}
+document.getElementById('ocultar').style.display = 'none';}
 
 /*Mostrar*/
 function mostrar(){

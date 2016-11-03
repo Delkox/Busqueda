@@ -13,13 +13,23 @@
 	<body>
 		<body ng-controller="MainCtrl as vm">
 		<form>
-			<div class="form-group">
-				<input type="text" ng-model="user.name" class="form-control" placeholder="Escribe aqui el nombre de usuario GitHub" name="enter">
-				<button ng-click="vm.fetchData(user)" class="btn btn-primary" onclick="mostrar()">Busca!</button></br>
-				<label for="enter" id="oculto">Busqueda de perfiles en GitHub</label>
+		<div class="col-lg-6">
+			<div class="input-group">
+				<input type="text" ng-model="user.name" class="form-control" placeholder="Escribe aqui el nombre de usuario GitHub" name="enter" required>
+				<span class="input-group-btn">
+				<button ng-click="vm.fetchData(user)" class="btn btn-primary" onclick="ocultar()">Busca!</button>
+				</span>
+			</div>	
+		</div>
+		<div>
+			<label for="enter" id="ocultar" style='display:block;'> Busqueda de perfiles en GitHub </label>
+
 				<h4 ng-if="vm.loading === true">loading...</h4>
 				<h3>{{vm.data}}</h3>
-			</div>	
+		</div>
+		<div>
+			
+		</div>
 		</form>
 	</body>
 </html>
