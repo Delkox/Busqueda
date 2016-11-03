@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html ng-app>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  </head>
-  <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-    </div>
-  </body>
+<html ng-app='app'>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Busqueda GItHub API</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script>
+			var app = angular.module('app', []);
+			app.controller('MainCtrl', function($http){
+				var vm = this;
+			    vm.fetchData = function(user){
+			    	vm.loading = true;
+				    $http.get('https://api.github.com/users/' + user.name).then(function(res){
+				    	vm.data = res;
+				    	vm.loading = false;
+				    })
+			    }
+			})
+		</script>
+	</head>
+	<body>
+		<body ng-controller="MainCtrl as vm">
+		<form>
+			<div class="form-group">
+				<label for="enter">Agrega un ususario</label>
+				<input type="text" ng-model="user.name">
+				<button ng-click="vm.fetchData(user)">Busca!</button>
+				<label>Busqueda de perfiles en GitHub</label>
+				<h4 ng-if="vm.loading === true">loading...</h4>
+				<h3>{{vm.data}}</h3>
+			</div>	
+		</form>
+	</body>
 </html>
