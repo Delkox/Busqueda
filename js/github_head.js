@@ -1,3 +1,4 @@
+/*Github*/
 var app = angular.module('app', []);
 app.controller('MainCtrl', function($http){
 	var vm = this;
@@ -13,3 +14,11 @@ app.controller('MainCtrl', function($http){
 		})
 	}
 })
+
+/*Ocultar*/
+function ocultar(){
+document.getElementById('oculto').style.display = 'none';}
+
+/*Mostrar*/
+function mostrar(){
+document.getElementById('mostrar').style.display = 'block';}
