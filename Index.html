@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Busqueda GItHub API</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript" src="js/github.js"></script>
 	</head>
@@ -11,8 +14,8 @@
 		<body ng-controller="MainCtrl as vm">
 		<form>
 			<div class="form-group">
-				<input type="text" ng-model="user.name">
-				<button ng-click="vm.fetchData(user)">Busca!</button></br>
+				<input type="text" ng-model="user.name" class="form-control" placeholder="Escribe aqui el usuario GitHub">
+				<button ng-click="vm.fetchData(user)" class="btn btn-primary">Busca!</button></br>
 				<label>Busqueda de perfiles en GitHub</label>
 				<h4 ng-if="vm.loading === true">loading...</h4>
 				<h3>{{vm.data}}</h3>
