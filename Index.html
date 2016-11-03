@@ -20,12 +20,27 @@
 				<button ng-click="vm.fetchData(user)" class="btn btn-primary" onclick="ocultar()">Busca!</button>
 				</span>
 			</div>	
-		</div>
+		</div></br>
 		<div>
 			<label for="enter" id="ocultar" style='display:block;'> Busqueda de perfiles en GitHub </label>
 
-				<h4 ng-if="vm.loading === true">loading...</h4>
-				<h3>{{vm.data}}</h3>
+				<h4 ng-if="vm.loading === true" class="loading">loading...</h4>
+			<table class="table">
+			    <thead>
+			      <tr>
+			        <th>Perfil de Usuario</th>
+			        <th>Repositorio</th>
+			        <th>Notas</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td><h3 class="resultado">{{vm.data}}</h3></td>
+			        <td>--</td>
+			        <td> creando </td>
+			      </tr>
+			    </tbody>
+			  </table>
 		</div>
 		<div>
 			

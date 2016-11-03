@@ -15,3 +15,8 @@ label {
 input + input {
     float: center;
 }
+
+.loading {
+	text-align: center;
+}
+
