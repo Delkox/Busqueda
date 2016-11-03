@@ -1,6 +1,6 @@
 form {
-    width: 50%;
-    margin: 0 auto;
+    width: 45%;
+    margin: 10% auto;
 }
 
 label, input {
@@ -8,13 +8,8 @@ label, input {
 }
 
 label {
-    width: 70%;
-    text-align: right;
-}
-
-label + input {
-    width: 30%;
-    margin: 0 50% 0 4%;
+    width: 100%;
+    text-align: center;
 }
 
 input + input {
