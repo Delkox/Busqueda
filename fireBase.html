@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Firebase Pruebas</title>
-	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
-	<script src="js/firebase_conection.js"></script>
-	<script>
-  		//peticiones fireBase
-  		var ref = new Firebase("https://busqueda-b35b3.firebaseio.com");
-  		ref.child("text").on("value", function(snapshot){
-  			console.log(snapshot.val());
-  			document.getElementById("prueba").textContent = snapshot.val();
-  		});
-  	</script>
+	<script src="js/firebase.js"></script>
+	<script src="js/firebase_conexion.js"></script>
 </head>
 <body>
 	<h1 id="prueba"></h1>
