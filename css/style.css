@@ -1,10 +1,6 @@
 form {
-    width: 70%;
+    width: 50%;
     margin: 10% auto;
-}
-
-label, input {
-
 }
 
 label {
@@ -20,7 +16,7 @@ input + input {
 	text-align: center;
 }
 
-.cbusqueda {
+.dlabel {
 	display: block;
 }
 
@@ -38,29 +34,4 @@ canvas{
 	padding: 0;
 	text-align: justify;
 	box-shadow: 5px 5px 0 #AAA;
-}
-
-
-/*-iPads (portrait and landscape) ———– */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-	body{
-		background-color: #DFF873;
-		font-size: 150%;
-		color:#37412F;
-	}
-}
-
-
- /*Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 767px) {
-	body{
-		background-color: #2D495F;
-		font-size: 110%;
-		color:#CCE6F3;
-	}
-	header{
-		background-color: #6E9091;
-	}
 }

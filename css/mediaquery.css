@@ -1,0 +1,45 @@
+/*-iPads (portrait and landscape) ———– */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	body{
+		background-color: #DFF873;
+		font-size: 150%;
+		color:#37412F;
+	}
+
+	form {
+    	width: 38%;
+    	margin: 10% auto;
+	}
+
+	.mostrar {
+		display: none;
+	}
+
+	input {
+    	float: left;
+	}
+
+	.dlabel {
+		display: block;
+	}
+}
+
+
+ /*Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+	body{
+		background-color: #2D495F;
+		font-size: 110%;
+		color:#CCE6F3;
+	}
+	form {
+    width: 38%;
+    margin: 10% auto;
+	}
+
+	.mostrar {
+		display: none;
+	}
+}
