@@ -7,7 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="js/mediaquery.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
 		<script src="js/firebase_conexion.js"></script>
@@ -17,7 +16,7 @@
 		<form>
 		<div>
 			<div class="input-group">
-				<input type="text" ng-model="user.name" class="form-control" placeholder="Escribe aqui el nombre de usuario GitHub" name="enter" required>
+				<input type="text" ng-model="user.name" class="form-control" placeholder="Usuario de GitHub" name="enter" required>
 				<span class="input-group-btn">
 				<button ng-click="vm.fetchData(user)" class="btn btn-primary" id="boton_gitHub">Busca!</button>
 				</span>
