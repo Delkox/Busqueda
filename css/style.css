@@ -20,3 +20,12 @@ input + input {
 	text-align: center;
 }
 
+.cbusqueda {
+	display: block;
+}
+
+.mostrar {
+	display: none;
+}
+
+

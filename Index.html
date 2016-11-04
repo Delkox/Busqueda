@@ -21,9 +21,9 @@
 			</div>	
 		</div></br></br>
 		<div >
-			<label for="enter" id="ocultar" style='display:block;'> Busqueda de perfiles en GitHub </label>
+			<label for="enter" id="ocultar" class="cbusqueda"> Busqueda de perfiles en GitHub </label>
 				<h4 ng-if="vm.loading === true" class="loading">loading...</h4>
-			<table class="table" id="mostrar" style='display:none;'>
+			<table class="table mostrar" id="mostrar">
 			    <thead>
 			      <tr>
 			        <th>Perfil de Usuario</th>
@@ -33,7 +33,7 @@
 			    </thead>
 			    <tbody>
 			      <tr>
-			        <td><h3 class="resultado">{{vm.data}}</h3></td>
+			        <td><h3 class="resultado">{{vm.data.imagen}}</h3></td>
 			        <td>--</td>
 			        <td> 
 
