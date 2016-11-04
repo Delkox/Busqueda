@@ -12,7 +12,7 @@ function agregar(){
 	 //Obtener informacion del comentario
 	var caja_comentario = document.getElementById('caja_comentario');
 	var comentario = caja_comentario.value;
-	  db.ref("metadata").set({
+	  db.ref("metadata").push({
 	  	pex: comentario
 	  }); 
 }
