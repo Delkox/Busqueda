@@ -22,7 +22,7 @@ function agregar(){
 var boton_gitHub = document.getElementById('boton_gitHub');
 boton_gitHub.addEventListener("click", proceso);
 
-//Evento e boton para firebase
+//Evento de boton para firebase
 var boton_firebase = document.getElementById('boton_firebase');
 boton_firebase.addEventListener("click", agregar);
 
