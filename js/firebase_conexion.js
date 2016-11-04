@@ -10,7 +10,7 @@ var config = {
 firebase.initializeApp(config);
 
 var app = angular.module("coment", ["firebase"]);
-app.controller("Controlador", function($scope,$firebaseObject){
+app.controller("MainCtrl", function($scope,$firebaseObject){
 
 	var ref = firebase.database().ref();
 	$scope.name = $firebaseObject(ref);
