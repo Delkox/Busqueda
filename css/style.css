@@ -28,4 +28,15 @@ input + input {
 	display: none;
 }
 
+canvas{
+	background-size: contain;
+}
+
+.datos--usuario{ 
+	list-style-type: none;
+	margin-top: 2em;
+	padding: 0;
+	text-align: justify;
+	box-shadow: 5px 5px 0 #AAA;
+}
 
