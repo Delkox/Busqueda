@@ -14,7 +14,7 @@ app.controller('MainCtrl', function($http){
 			x=0;
 			var lista_repos = document.getElementById('lista_repos');
 			while(x < largo){
-				lista_repos.innerHTML+= "<li class='list-group-item'>"+ " <h5> " + res.data[x].name + "</h5>" + "</br>"+ res.data[x].description + "</li>";
+				lista_repos.innerHTML+= "<li class='list-group-item'>"+ " <h4> " + res.data[x].name + "</h4>" + "</br>"+ res.data[x].description + "</li>";
 				x++;
 			}
 		})

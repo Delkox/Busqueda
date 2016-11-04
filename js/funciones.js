@@ -2,6 +2,8 @@
 function proceso(){
 document.getElementById('ocultar').style.display = 'none';
 document.getElementById('mostrar').style.display = 'block';
+var lista = document.getElementById('lista_repos');
+lista_repos.innerHTML="";
 }
 
 //Evento de boton para gitHub
