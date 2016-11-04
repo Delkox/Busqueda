@@ -6,7 +6,6 @@
 		<title>Busqueda GItHub API</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		
 	</head>
@@ -33,9 +32,9 @@
 			    </thead>
 			    <tbody>
 			      <tr>
-			        <td class="perfil--usuario">
+			        <td class="perfil--usuario" id="columna1">
 			        	<h3></h3>
-			        	<canvas id="usuario--imagen"></canvas>
+			        	<!--<canvas id="usuario--imagen"></canvas>
 			        	<div class="datos">
 			        		<ul class="datos--usuario">
 			        			<li id="usuario__nombre">Nombre:  </li>
@@ -43,9 +42,13 @@
 			        			<li id="usuario__email">Email: </li>
 			        			<li id="usuario__ubicacion">Ubicacion: </li>
 			        		</ul>
-			        	</div>
+			        	</div>-->
 			        </td>
-			        <td>--</td>
+			        <td class="repositorios" id="columna2">
+			        	<ul class="list-group" id="lista_repos">
+			        		
+			        	</ul>
+			        </td>
 			        <td> 
 
 			        </td>
@@ -55,5 +58,6 @@
 		</div>
 		<script type="text/javascript" src="js/conexion_github.js"></script>
 		<script type="text/javascript" src="js/funciones.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</body>
 </html>
