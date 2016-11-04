@@ -35,10 +35,9 @@ canvas{
 	box-shadow: 5px 5px 0 #AAA;
 }
 
-table{
-	width: 100%;
+table {
+	align="center";
 }
-
 /*-iPads (portrait and landscape) ———– */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	body{
