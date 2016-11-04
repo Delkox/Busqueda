@@ -7,26 +7,25 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/angular.min.js"></script>
-		<script src="js/firebase.js"></script>
-		<script src="js/angularfire.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
 		<script src="js/firebase_conexion.js"></script>
 		
 	</head>
 	<body ng-controller="MainCtrl as vm">
 		<form>
 		<div>
-			<div class="input-group cbusqueda">
+			<div class="input-group">
 				<input type="text" ng-model="user.name" class="form-control" placeholder="Usuario de GitHub" name="enter" required>
 				<span class="input-group-btn">
 				<button ng-click="vm.fetchData(user)" class="btn btn-primary" id="boton_gitHub">Busca!</button>
 				</span>
-			</div>
-		</div>	
-		<div class="center-block">
+			</div>	
+		</div></br></br>
+		<div >
 			<label for="enter" id="ocultar" class="dlabel"> Busqueda de perfiles en GitHub </label>
 				<h4 ng-if="vm.loading === true" class="loading">loading...</h4>
-			<table class="table table-hover mostrar" id="mostrar">
+			<table class="table mostrar" id="mostrar">
 			    <thead>
 			      <tr>
 			        <th>Perfil de Usuario</th>
@@ -48,7 +47,6 @@
 			        		</ul>
 			        	</div>
 			        </td>
-			        <div>
 			        <td class="repositorios" id="columna2">
 			        	<ul class="list-group" id="lista_repos">
 			        		
