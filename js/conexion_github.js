@@ -26,9 +26,10 @@ app.controller('MainCtrl', function($http){
 			imagen_perfil.imagen = new Image();
 			imagen_perfil.imagen.src =imagen_perfil.imagen_url;
 			imagen_perfil.imagen.onload = dibujarFondo();
-
 			function dibujarFondo(){
-				contexto_img_perfil.drawImage(imagen_perfil.imagen,0,0);
+				imagen_canvas.width=250
+    		 	imagen_canvas.height=250
+				contexto_img_perfil.drawImage(imagen_perfil.imagen,0,0,250,250);
 			}
 
 			//datos usuario
