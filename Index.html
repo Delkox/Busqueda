@@ -8,6 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+		<script src="js/firebase_conexion.js"></script>
 		
 	</head>
 	<body ng-controller="MainCtrl as vm">
@@ -51,7 +53,15 @@
 			        	</ul>
 			        </td>
 			        <td> 
-
+			        	<div class="input-group">
+							<input type="text" class="form-control" placeholder="Escribe aqui un comentario" name="enter" id="caja_comentario" required>
+							<span class="input-group-btn">
+							<button class="btn btn-primary" id="boton_firebase">Publica</button>
+							</span>
+						</div>
+						<div>
+								<h4 id="publicar"></h4>
+						</div>
 			        </td>
 			      </tr>
 			    </tbody>

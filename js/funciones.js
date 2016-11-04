@@ -19,8 +19,8 @@ function agregar(){
 
 
 //Evento de boton para gitHub
-/*var boton_gitHub = document.getElementById('boton_gitHub')
-boton_gitHub.addEventListener("click", proceso);*/
+var boton_gitHub = document.getElementById('boton_gitHub')
+boton_gitHub.addEventListener("click", proceso);
 
 //Evento e boton para firebase
 var boton_firebase = document.getElementById('boton_firebase');
