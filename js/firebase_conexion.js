@@ -1,4 +1,4 @@
-{function() {
+(function() {
 
 	var config = {
 		    apiKey: "AIzaSyAU5rM0ToeXT5u5lDsbYKqXGHvlkbjHrVM",
@@ -10,7 +10,7 @@
 	firebase.initializeApp(config);
 
 	angular.module('app', ['firebase']);
-	angular.controller('MyCrtl', function($firebaseObject){
+	angular.controller('MyCrtl', function($firebaseObject) {
 		const rootRef = firebase.database().ref().child('angular');
 		const ref = rootRef.child('object');
 		this.object = $firebaseObject(ref);
