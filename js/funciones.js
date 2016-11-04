@@ -2,7 +2,6 @@
 function proceso(){
 document.getElementById('ocultar').style.display = 'none';
 document.getElementById('mostrar').style.display = 'block';
-
 //imagen de perfil GitHub
 var imagen_perfil = document.getElementById("imagen_perfil");
 
