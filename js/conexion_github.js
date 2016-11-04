@@ -2,15 +2,13 @@
 var app = angular.module('app', []);
 
 app.controller('MainCtrl', function($http){
-	var vm = this;
-
-	vm.fetchData = function(user){
-		vm.loading = true;
+	var rm = this;
+	rm.fetchData = function(user){
+		rm.loading = true;
 		$http.get('https://api.github.com/users/' + user.name + '/repos').then(function(res){
-			vm.data = res;
-			vm.data.uno = res.data[0];
+			rm.data = res;
 			var largo = res.data.length;
-			vm.loading = false;
+			rm.loading = false;
 			x=0;
 			var lista_repos = document.getElementById('lista_repos');
 			while(x < largo){
@@ -19,6 +17,7 @@ app.controller('MainCtrl', function($http){
 			}
 		})
 	}
+
 })
 
 /*Github user data
